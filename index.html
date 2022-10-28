@@ -1,4 +1,6 @@
-<html lang="en"><head>
+<!DOCTYPE html>
+<html lang="en">
+  <head>
     <meta charset="utf-8">
     <meta name="viewport" content="width=device-width, initial-scale=1">
     <title>Github App</title>
@@ -8,20 +10,30 @@
     <header>
       <h1 itemid="/main-title" itemscope="" itemtype="type/text">Almost weekend - hello Gabriel - second commit</h1>
     </header>
-    <main>
+    <main itemid="/main-content-container" itemscope=""  itemtype="type/fragment">
       <h2 itemid="/article-head" itemscope="" itemtype="type/text">Article - this is an update that will directly go to github</h2>
+      <p itemprop="common-text">This is the common text</p>      
       <article itemscope="" itemid="/article" itemtype="type/fragment">
-        <p itemprop="author" itemscope="" itemtype="text">Edmond Dantes</p>
-        <p itemprop="title" itemscope="" itemtype="text">Traveller</p>
-        <p itemprop="desc" itemscope="" itemtype="text">
+        <h3 itemprop="subtitle" itemscope=""  itemtype="text">Monte Christo</h3>
+        <p itemprop="author" itemscope=""  itemtype="text">Edmond Dantes</p>
+        <p itemprop="title" itemscope=""  itemtype="text">Traveller</p>
+        <p itemprop="desc" itemscope=""  itemtype="text">
           The quay was soon covered with the usual crowd of curious onlookers, for the arrival of a ship is always a great event in Marseilles,
           especially when, like the Pharaon, it has been built, rigged and laden in the city and belongs to a local shipowner.
         </p>
+        <p itemscope=""  itemprop="common-text" itemtype="text">This is the common text</p>
+        <div itemscope="" itemid="/card" itemtype="type/fragment">
+          <p itemprop="common-text" itemscope=""  itemtype="text">This is the common text</p>
+          <p itemprop="title" itemscope=""  itemtype="text">Summary card</p>
+          <div itemscope="" itemid="/buttom-menu" itemtype="type/fragment">
+            <p itemscope=""  itemprop="common-text" itemtype="text">This is the common text</p>
+            <button itemscope=""  itemprop="button" itemtype="text">OK</button>
+          </div>
+        </div>
       </article>
     </main>
     <footer>
       <p itemid="/footer" itemscope="" itemtype="type/text">Footer</p>
     </footer>
-  
-
-</body></html>
+  </body>
+</html>
